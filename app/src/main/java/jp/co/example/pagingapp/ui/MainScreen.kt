@@ -52,7 +52,7 @@ fun MainScreen(viewModel: MainViewModel) {
             ) { index ->
                 val photo = lazyPagingItems[index] ?: return@items
                 AsyncImage(
-                    model = photo.urls.small,
+                    model = photo.urls.thumb,
                     contentDescription = null,
                     modifier = Modifier
                         .fillMaxWidth()
